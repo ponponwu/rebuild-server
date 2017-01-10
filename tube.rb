@@ -20,7 +20,7 @@ class Tube
     Process.waitall
   end
 
-   def start
+  def start
     loop do
       socket = @server.accept
       Thread.new do
